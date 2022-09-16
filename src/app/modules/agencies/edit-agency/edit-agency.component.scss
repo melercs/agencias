@@ -1,0 +1,21 @@
+.header {
+  background-color: #002A8D;
+  height: 60px;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.form-agency {
+  margin-top: 30px;
+  &-group {
+    &__label {
+      font-weight: bold;
+    }
+    &__input {
+    }
+  }
+}

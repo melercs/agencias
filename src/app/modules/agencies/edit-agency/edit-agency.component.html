@@ -1,0 +1,59 @@
+<div class="header">
+  detalle de Agencia
+</div>
+<div class="container">
+  <form class="form-agency" action="" [formGroup]="form">
+    <div class="mb-3 form-agency-group">
+      <label class="form-agency-group__label">Nombre de Agencia</label>
+      <input
+        class="form-agency-group__input form-control"
+        type="text"
+        [formControlName]="fielsFormAgency.AGENCIA"
+      >
+    </div>
+    <div class="mb-3 form-agency-group">
+      <label class="form-agency-group__label">Distrito</label>
+      <input
+        type="text"
+        class="form-agency-group__input form-control"
+        [formControlName]="fielsFormAgency.DISTRITO"
+      >
+    </div>
+    <div class="mb-3 form-agency-group">
+      <label class="form-agency-group__label">Dirección</label>
+      <input
+        type="text"
+        class="form-agency-group__input form-control"
+        [formControlName]="fielsFormAgency.DIRECCION"
+      >
+    </div>
+    <div class="mb-3 form-agency-group">
+      <label class="form-agency-group__label">Latitud</label>
+      <input
+        type="text"
+        class="form-agency-group__input form-control"
+        [formControlName]="fielsFormAgency.LATITUD"
+      >
+    </div>
+    <div class="mb-3 form-agency-group">
+      <label class="form-agency-group__label">Longitud</label>
+      <input
+        type="text"
+        class="form-agency-group__input form-control"
+        [formControlName]="fielsFormAgency.LONGITUD"
+      >
+    </div>
+    <div class="mb-3 form-agency-group">
+      <button
+        type="button"
+        class="btn btn-default"
+        (click)="back()"
+      >Atras</button>
+      <button
+        type="button"
+        class="btn btn-primary"
+        (click)="updateAgency()"
+      >Actualizar informacion</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,13 @@
+<div class="agency" (click)="handleRow(data)">
+  <div class="agency-icon">
+    <img class="agency-icon__imagen" [src]="imageUrl" alt="foto">
+  </div>
+  <div class="agency-detail">
+    <div class="agency-detail__name">{{data.agencia}}</div>
+    <div class="agency-detail__city">{{data.departamento}}</div>
+    <div class="agency-detail__location">{{data.direccion}}</div>
+  </div>
+  <div class="agency-action">
+    <span class="agency-action__go" (click)="handleDetail(data.id)"></span>
+  </div>
+</div>
